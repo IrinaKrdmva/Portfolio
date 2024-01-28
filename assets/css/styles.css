@@ -145,18 +145,18 @@ img {
   padding: 4.5rem 0 1rem;
 }
 
-.section__title,
-.section__subtitle {
+.section-title,
+.section-subtitle {
   text-align: center;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-bottom: 2rem;
 }
 
-.section__subtitle {
+.section-subtitle {
   display: block;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
@@ -222,7 +222,9 @@ img {
 }
 
 /* Change background header */
-
+.scroll-header {
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
 
 /*=============== HOME ===============*/
 .home-container {
@@ -358,7 +360,54 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about {
+  margin-top: 3.5rem;
+}
 
+.about-container {
+  row-gap: 2.5rem;
+}
+
+.about-img {
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.about-data {
+  text-align: center;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-box {
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: .75rem;
+}
+
+.about-icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+
+.about-title {
+  font-size: var(--small-font-size);
+}
+
+.about-subtitle {
+  font-size: var(--tiny-font-size);
+}
+
+.about-description {
+  margin-bottom: 2rem;
+}
 
 /*=============== SKILLS ===============*/
 
