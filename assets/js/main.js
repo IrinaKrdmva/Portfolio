@@ -33,10 +33,24 @@ modalClose.forEach((mc) => {
 })
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
+let mixerPortfolio = mixitup('.work-container', {
+    selectors: {
+        target: '.work-card'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
 /* Link active work */
+const linkWork = document.querySelectorAll('.work-item')
 
+function activework() {
+    linkWork.forEach(l => l.classList.remove('active-work'))
+    this.classList.add('active-work')
+}
+
+linkWork.forEach(l => l.addEventListener('click', activework))
 
 /*=============== SWIPER TESTIMONIAL ===============*/
 
