@@ -612,10 +612,37 @@ img {
 }
 
 /*=============== TESTIMONIAL ===============*/
+.testimonial-card {
+  background-color: var(--container-color);
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
 
+.testimonial-img {
+  width: 60px;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.testimonial-description {
+  font-size: var(--small-font-size);
+}
 
 /* Swiper class */
+.swiper-pagination-bullet {
+  background-color: var(--text-color-light);
+}
 
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
 
 /*=============== CONTACT ===============*/
 
