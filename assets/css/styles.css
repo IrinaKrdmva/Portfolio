@@ -114,15 +114,83 @@ img {
 }
 
 /*=============== THEME ===============*/
+.change-theme {
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .3s;
+}
 
+.change-theme:hover {
+  color: var(--first-color);
+}
 
-/*========== Variables Dark theme ==========*/
-
+/*========== Variables Light theme ==========*/
+body.light-theme {
+  --title-color: hsl(var(--second-hue), 15%, 15%);
+  --text-color: hsl(var(--second-hue), 8%, 35%);
+  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --container-color: #fff;
+}
 
 /*========== 
     Color changes in some parts of 
     the website, in light theme
 ==========*/
+.light-theme .scroll-header {
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
+}
+
+.light-theme .nav-menu {
+  background-color: hsla(var(--second-hue), 32%, 90%, .8);
+}
+
+.light-theme .section-subtitle {
+  color: var(--text-color);
+}
+
+.light-theme .home-social-link {
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+}
+
+.light-theme .home-social::after,
+.light-theme .footer-social-link {
+  background-color: var(--title-color);
+}
+
+.light-theme .home-social-link,
+.light-theme .home-scroll,
+.light-theme .button,
+.light-theme .button:hover,
+.light-theme .active-work,
+.light-theme .footer-title,
+.light-theme .footer-link,
+.light-theme .footer-copy {
+  color: var(--title-color);
+}
+
+.light-theme .about-box {
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+}
+
+.light-theme .skills-content,
+.light-theme .services-card,
+.light-theme .work-card,
+.light-theme .testimonial-card,
+.light-theme .contact-card {
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
+}
+
+.light-theme::-webkit-scrollbar {
+  background-color: hsl(var(--second-hue), 8%, 66%);
+}
+
+.light-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--second-hue), 8%, 54%);
+}
+
+.light-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--second-hue), 8%, 44%);
+}
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -170,6 +238,8 @@ img {
   width: 100%;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
+  transition: .4s;
+  /* for light mode animation */
 }
 
 .nav {
@@ -197,6 +267,8 @@ img {
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
+  transition: .4s;
+  /* for light mode animation */
 }
 
 .nav-list {
@@ -219,6 +291,7 @@ img {
       hsla(var(--first-hue), var(--sat), var(--lig), 1),
       hsla(var(--first-hue), var(--sat), var(--lig), .2));
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
+  color: var(--title-color);
 }
 
 /* Change background header */
